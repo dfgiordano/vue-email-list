@@ -10,9 +10,8 @@
     </head>
     <body>
         <div id="root">
-            <ol>
-                <li 
-                v-if="arrayEmails.length == 10"
+            <ol v-if="arrayEmails.length == 10">
+                <li
                 v-for=" email in arrayEmails"> {{ email }}</li>
             </ol>
         </div>
